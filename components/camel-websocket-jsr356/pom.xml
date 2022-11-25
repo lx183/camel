@@ -32,12 +32,6 @@
     <properties>
         <tomcat.version>9.0.35</tomcat.version>
 
-        <camel.osgi.import.pkg>
-            !org.apache.camel.component.websocket.jsr356.*,
-            javax.websocket.*;version="[1.1,2)";resolution:=optional,
-            ${camel.osgi.import.defaults},
-            *
-        </camel.osgi.import.pkg>
     </properties>
 
     <dependencies>

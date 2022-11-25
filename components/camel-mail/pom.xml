@@ -32,9 +32,6 @@
     <description>Camel Mail support</description>
 
     <properties>
-        <camel.osgi.import.before.defaults>
-            javax.activation.*;version="${javax-activation-version-range}"
-        </camel.osgi.import.before.defaults>
     </properties>
 
     <dependencies>

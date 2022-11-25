@@ -34,9 +34,6 @@
     <description>Wordpress REST API support</description>
 
     <properties>
-        <camel.osgi.import.additional>
-            org.apache.cxf.*;version="${cxf-version-range}"
-        </camel.osgi.import.additional>
     </properties>
 
     <dependencies>
