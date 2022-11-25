@@ -411,7 +411,7 @@ public interface AtmosphereWebsocketEndpointBuilderFactory {
             return this;
         }
         /**
-         * To use a custom buffer size on the javax.servlet.ServletResponse.
+         * To use a custom buffer size on the jakarta.servlet.ServletResponse.
          * 
          * The option is a: &lt;code&gt;java.lang.Integer&lt;/code&gt; type.
          * 
@@ -426,7 +426,7 @@ public interface AtmosphereWebsocketEndpointBuilderFactory {
             return this;
         }
         /**
-         * To use a custom buffer size on the javax.servlet.ServletResponse.
+         * To use a custom buffer size on the jakarta.servlet.ServletResponse.
          * 
          * The option will be converted to a
          * &lt;code&gt;java.lang.Integer&lt;/code&gt; type.
