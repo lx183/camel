@@ -25,10 +25,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
 
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import org.apache.camel.component.bonita.api.filter.BonitaAuthFilter;
@@ -40,7 +40,7 @@ import org.apache.cxf.jaxrs.ext.multipart.Attachment;
 import org.apache.cxf.jaxrs.ext.multipart.AttachmentBuilder;
 import org.apache.cxf.jaxrs.ext.multipart.ContentDisposition;
 
-import static javax.ws.rs.client.Entity.entity;
+import static jakarta.ws.rs.client.Entity.entity;
 
 public class BonitaAPIUtil {
 

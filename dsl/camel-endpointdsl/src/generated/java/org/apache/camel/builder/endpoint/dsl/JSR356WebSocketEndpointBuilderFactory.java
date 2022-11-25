@@ -443,7 +443,7 @@ public interface JSR356WebSocketEndpointBuilderFactory {
         /**
          * The session.
          * 
-         * The option is a: {@code javax.websocket.Session} type.
+         * The option is a: {@code jakarta.websocket.Session} type.
          * 
          * Group: common
          * 
