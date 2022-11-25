@@ -242,9 +242,9 @@
 
             <dependencies>
                 <dependency>
-                    <groupId>javax.enterprise</groupId>
-                    <artifactId>cdi-api</artifactId>
-                    <version>${cdi-api-2.0-version}</version>
+                    <groupId>jakarta.enterprise</groupId>
+                    <artifactId>jakarta.enterprise.cdi-api</artifactId>
+                    <version>${jakarta-enterprise-cdi-api-version}</version>
                     <scope>provided</scope>
                 </dependency>
 

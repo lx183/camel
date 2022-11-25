@@ -51,8 +51,8 @@
             <version>${johnzon-version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-json_1.1_spec</artifactId>
+            <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
             <version>${geronimo-json-spec-version}</version>
             <scope>compile</scope>
         </dependency>
