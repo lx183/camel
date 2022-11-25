@@ -60,7 +60,6 @@
     <atlassian-fugue-version>3.0.0</atlassian-fugue-version>
     <atmos-client-version>3.2.1</atmos-client-version>
     <atmosphere-version>2.6.4</atmosphere-version>
-    <atmosphere-version-range>[2.6,3.0)</atmosphere-version-range>
     <avro-ipc-jetty-version>1.11.1</avro-ipc-jetty-version>
     <avro-ipc-netty-version>1.11.1</avro-ipc-netty-version>
     <avro-version>1.11.1</avro-version>
@@ -82,28 +81,11 @@
     <camel.failsafe.forkTimeout>600</camel.failsafe.forkTimeout>
     <camel.osgi.activator></camel.osgi.activator>
     <camel.osgi.dynamic></camel.osgi.dynamic>
-    <camel.osgi.exclude.dependencies>false</camel.osgi.exclude.dependencies>
-    <camel.osgi.export>${camel.osgi.export.pkg};-noimport:=true;${camel.osgi.version}</camel.osgi.export>
-    <camel.osgi.export.pkg>$${replace;{local-packages};;;\;}</camel.osgi.export.pkg>
-    <camel.osgi.failok>false</camel.osgi.failok>
-    <camel.osgi.import>${camel.osgi.import.pkg}</camel.osgi.import>
     <camel.osgi.import.additional></camel.osgi.import.additional>
     <camel.osgi.import.before.defaults></camel.osgi.import.before.defaults>
-    <camel.osgi.import.camel.version>version="[$(version;==;${camel.osgi.version.clean}),$(version;=+;${camel.osgi.version.clean}))"</camel.osgi.import.camel.version>
-    <camel.osgi.import.default.version>[$(version;==;$(@)),$(version;+;$(@)))</camel.osgi.import.default.version>
     <camel.osgi.import.defaults></camel.osgi.import.defaults>
-    <camel.osgi.import.pkg>org.apache.camel.*;${camel.osgi.import.camel.version},
-            ${camel.osgi.import.before.defaults},
-            ${camel.osgi.import.defaults},
-            ${camel.osgi.import.additional},
-            *</camel.osgi.import.pkg>
-    <camel.osgi.import.strict.version>version="[$(version;===;${camel.osgi.version.clean}),$(version;==+;${camel.osgi.version.clean}))"</camel.osgi.import.strict.version>
-    <camel.osgi.manifest>${project.build.outputDirectory}/META-INF/MANIFEST.MF</camel.osgi.manifest>
-    <camel.osgi.private.pkg>!*</camel.osgi.private.pkg>
     <camel.osgi.provide.capability></camel.osgi.provide.capability>
     <camel.osgi.require.capability></camel.osgi.require.capability>
-    <camel.osgi.symbolic.name>${project.groupId}.${project.artifactId}</camel.osgi.symbolic.name>
-    <camel.osgi.version>version=${project.version}</camel.osgi.version>
     <camel.surefire.fork.vmargs>-XX:+ExitOnOutOfMemoryError</camel.surefire.fork.vmargs>
     <camel.surefire.forkCount>1</camel.surefire.forkCount>
     <camel.surefire.forkTimeout>600</camel.surefire.forkTimeout>
@@ -152,7 +134,6 @@
     <curator-version>4.3.0</curator-version>
     <cxf-codegen-plugin-version>3.5.4</cxf-codegen-plugin-version>
     <cxf-version>3.5.4</cxf-version>
-    <cxf-version-range>[3.5,3.6)</cxf-version-range>
     <cxf-xjc-plugin-version>3.3.2</cxf-xjc-plugin-version>
     <cxf-xjc-utils-version>3.3.2</cxf-xjc-utils-version>
     <cxf.codegen.jvmArgs></cxf.codegen.jvmArgs>
@@ -294,7 +275,6 @@
     <javapoet-version>1.11.1</javapoet-version>
     <javassist-version>3.28.0-GA</javassist-version>
     <javax-activation-version>1.2.0</javax-activation-version>
-    <javax-activation-version-range>[0,2)</javax-activation-version-range>
     <javax-annotation-api-version>1.3.2</javax-annotation-api-version>
     <javax-el-api-hibernate-validator-version>3.0.1-b04</javax-el-api-hibernate-validator-version>
     <javax-el-hibernate-validator-version>3.0.1-b10</javax-el-hibernate-validator-version>
@@ -311,7 +291,6 @@
     <jbpm-version>7.64.0.Final</jbpm-version>
     <jcache-bundle-version>1.1.1_1</jcache-bundle-version>
     <jclouds-google-guava-version>27.1-jre</jclouds-google-guava-version>
-    <jclouds-google-guava-version-range>[27.0,28.0)</jclouds-google-guava-version-range>
     <jclouds-version>2.5.0</jclouds-version>
     <jcommander-version>1.72</jcommander-version>
     <jcr-version>2.0</jcr-version>
@@ -380,7 +359,6 @@
     <log4j2-version>2.18.0</log4j2-version>
     <logback-version>1.2.11</logback-version>
     <lucene-version>8.11.1</lucene-version>
-    <lucene-version-range>[8,9)</lucene-version-range>
     <mapstruct-version>1.5.2.Final</mapstruct-version>
     <maven-antrun-plugin-version>1.6</maven-antrun-plugin-version>
     <maven-archetype-packaging-version>2.3</maven-archetype-packaging-version>
@@ -486,7 +464,6 @@
     <scala-datasonnet-version>2.13.9</scala-datasonnet-version>
     <scala-version>2.11.12</scala-version>
     <servicemix-specs-version>2.9.0</servicemix-specs-version>
-    <servlet-version-range>[3,4)</servlet-version-range>
     <shiro-version>1.9.1</shiro-version>
     <shrinkwrap-descriptors-version>2.0.0</shrinkwrap-descriptors-version>
     <shrinkwrap-maven-version>3.6.3</shrinkwrap-maven-version>
@@ -504,7 +481,6 @@
     <snakeyaml-version>1.33</snakeyaml-version>
     <snmp4j-version>2.6.3_1</snmp4j-version>
     <solr-version>8.11.2</solr-version>
-    <solr-version-range>[8,9)</solr-version-range>
     <solr-zookeeper-version>3.6.2</solr-zookeeper-version>
     <spark-version>3.2.2</spark-version>
     <splunk-version>1.9.0_1</splunk-version>
@@ -517,7 +493,6 @@
     <spring-security-version>5.7.5</spring-security-version>
     <spring-vault-core-version>2.3.2</spring-vault-core-version>
     <spring-version>${spring5-version}</spring-version>
-    <spring-version-range>[5,6)</spring-version-range>
     <spring-ws-version>3.1.4</spring-ws-version>
     <spring5-version>5.3.24</spring5-version>
     <sql-maven-plugin-version>1.5</sql-maven-plugin-version>

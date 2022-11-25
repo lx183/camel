@@ -33,10 +33,6 @@
     <description>Camel Jetty 9.x support</description>
 
     <properties>
-        <camel.osgi.import.before.defaults>
-            org.eclipse.jetty.*;version="[9.4,10)",
-            javax.servlet.*;version="${servlet-version-range}"
-        </camel.osgi.import.before.defaults>
         <firstVersion>2.15.0</firstVersion>
     </properties>
 
