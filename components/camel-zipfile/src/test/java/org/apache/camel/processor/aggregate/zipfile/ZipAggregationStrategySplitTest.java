@@ -18,6 +18,7 @@ package org.apache.camel.processor.aggregate.zipfile;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.concurrent.TimeUnit;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -28,6 +29,7 @@ import org.apache.camel.test.junit5.CamelTestSupport;
 import org.apache.camel.util.IOHelper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.awaitility.Awaitility;
 
 import static org.apache.camel.test.junit5.TestSupport.deleteDirectory;
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +53,7 @@ public class ZipAggregationStrategySplitTest extends CamelTestSupport {
 
         MockEndpoint.assertIsSatisfied(context);
 
-        String tempFile = mock.getExchanges().get(0).getIn().getHeader("tempFile", String.class);
+        String tempFileLocation = mock.getExchanges().get(0).getIn().getHeader("tempFile", String.class);
 
         File[] files = new File(TEST_DIR).listFiles();
         assertNotNull(files);
@@ -72,7 +74,8 @@ public class ZipAggregationStrategySplitTest extends CamelTestSupport {
         }
 
         // Temp file needs to be deleted now
-        assertFalse(new File(tempFile).exists());
+        File tempFile = new File(tempFileLocation);
+        Awaitility.waitAtMost(5, TimeUnit.SECONDS).alias("Tempfile is deleted").until(() -> !tempFile.exists());
     }
 
     @Override
